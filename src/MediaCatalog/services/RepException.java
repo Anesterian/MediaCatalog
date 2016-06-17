@@ -1,5 +1,5 @@
 package MediaCatalog.services;
-
+//class for error messages
 public class RepException  extends Exception {
     public static final int ERROR_GET_DATA=0;
     public static final int ERROR_SET_DATA=1;

@@ -14,7 +14,7 @@ public class Put implements Operation {
     public String getName() {
         return "put";
     }
-
+    //what to do if user called help for this command
     @Override
     public void showHelp() {
         System.out.println("put {path to media file} [path to media catalog]");

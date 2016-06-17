@@ -18,7 +18,7 @@ import MediaCatalog.consolecommands.commands.Search;
 
 public class Application {
     private static List<Operation> init(){
-        List<Operation> operations = new ArrayList<Operation>();
+        List<Operation> operations = new ArrayList<Operation>(); //initializing list of operations
         operations.add(new Put());
         operations.add(new Get());
         operations.add(new Delete());
@@ -28,16 +28,16 @@ public class Application {
         operations.add(new Favorite());
         operations.add(new Close());
         operations.add(new Help(operations));
-        return operations;
+        return operations;       //operations
 
     }
     public static void main(String[] args) {
 
-        List<Operation> operations = init();
-        Scanner scanner = new Scanner(System.in);
+        List<Operation> operations = init();       //initializing List of operations
+        Scanner scanner = new Scanner(System.in);  //creating scanner for commands
         while (true){
             System.out.print("\n>:");
-            String inputedCommand = scanner.nextLine();
+            String inputedCommand = scanner.nextLine();      //scanning input string
             for (Operation operation : operations){
                 if (operation.getName().equals(CommandUtils.extractName(inputedCommand))){
                     List<String> params = CommandUtils.extractParametrs(inputedCommand);

@@ -12,7 +12,7 @@ public class Move implements Operation {
     public String getName() {
         return "move";
     }
-
+    //what to do if user called help for this command
     @Override
     public void showHelp() {
         System.out.println("move {old path} {new path}");

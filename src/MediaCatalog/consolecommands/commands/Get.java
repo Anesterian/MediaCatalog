@@ -14,7 +14,7 @@ public class Get implements Operation {
     public String getName() {
         return "get";
     }
-
+    //what to do if user called help for this command
     @Override
     public void showHelp() {
         System.out.println("get {media path} {file system directory}");

@@ -12,12 +12,12 @@ public class Favorite implements Operation{
     public String getName() {
         return "favorite";
     }
-
+    //what to do if user called help for this command
     @Override
     public void showHelp() {
         System.out.println("favorite {add or remove} {path to media}");
     }
-
+    
     @Override
     public void execute(List<String> params) {
         if (!params.isEmpty()&&params.size()==2){

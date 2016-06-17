@@ -2,11 +2,11 @@ package MediaCatalog;
 
 public class MediaFiles {
 	
-	private byte[] data;
+	private byte[] data;              //initializing variables
 	private String name;
 	private String catalog = "";
 	private boolean favorite;
-	
+	//methods needed for work
 	public boolean IsFavorite(){
 		return favorite;
 	}

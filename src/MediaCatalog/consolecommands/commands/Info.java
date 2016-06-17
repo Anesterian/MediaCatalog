@@ -12,7 +12,7 @@ public class Info implements Operation {
     public String getName() {
         return "info";
     }
-
+    //what to do if user called help for this command
     @Override
     public void showHelp() {
         System.out.println("write 'info' or 'info favorite' if you want see list media files");

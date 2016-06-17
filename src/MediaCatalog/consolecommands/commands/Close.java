@@ -9,7 +9,7 @@ public class Close  implements Operation {
     public String getName() {
         return "exit";
     }
-
+    //what to do if user called help for this command
     @Override
     public void showHelp() {
         System.out.println("exit from app");

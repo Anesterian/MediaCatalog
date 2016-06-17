@@ -12,7 +12,7 @@ public class Search implements Operation {
     public String getName() {
         return "search";
     }
-
+    //what to do if user called help for this command
     @Override
     public void showHelp() {
         System.out.println("search { text }");

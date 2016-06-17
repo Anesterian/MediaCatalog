@@ -3,7 +3,7 @@ package MediaCatalog.services;
 import java.util.List;
 
 import MediaCatalog.MediaFiles;
-
+//interface needed for exceptions
 public interface MediaRep {
     void add(MediaFiles media) throws RepException;
     void delete(MediaFiles media) throws RepException;

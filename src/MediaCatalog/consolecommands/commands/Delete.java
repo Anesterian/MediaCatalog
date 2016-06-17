@@ -12,7 +12,7 @@ public class Delete implements Operation {
     public String getName() {
         return "delete";
     }
-
+    //what to do if user called help for this command
     @Override
     public void showHelp() {
         System.out.println("delete {path to media}");
