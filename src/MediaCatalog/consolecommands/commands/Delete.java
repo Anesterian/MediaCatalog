@@ -2,7 +2,10 @@ package MediaCatalog.consolecommands.commands;
 
 import java.util.List;
 
+import MediaCatalog.MediaFiles;
+import MediaCatalog.Utils.RepFactory;
 import MediaCatalog.consolecommands.Operation;
+import MediaCatalog.services.RepException;
 
 public class Delete implements Operation {
     @Override
@@ -18,13 +21,13 @@ public class Delete implements Operation {
 
     @Override
     public void execute(List<String> params) {
-        Media media= new Media();
+        MediaFiles media= new MediaFiles();
         if (!params.isEmpty()){
             try {
                 media.setPath(params.get(0));
-                StorageFactory.getInstance().delete(media);
+                RepFactory.getInstance().delete(media);
                 System.out.println("media file deleted");
-            } catch (StorageException e) {
+            } catch (RepException e) {
                 System.err.println(e.getMessage());
             }
         }else{
