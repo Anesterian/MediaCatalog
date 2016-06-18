@@ -7,12 +7,12 @@ import MediaCatalog.consolecommands.Operation;
 public class Close  implements Operation {
     @Override
     public String getName() {
-        return "exit";
+        return "close";
     }
     //what to do if user called help for this command
     @Override
     public void showHelp() {
-        System.out.println("exit from app");
+        System.out.println("close the app");
     }
 
 
