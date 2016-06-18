@@ -1,0 +1,26 @@
+MediaCatalog
+
+if you want to run this application you will need java installed on your computer
+open your cmd, move into folder when the jar file lies.
+Enter command: java -jar {name of jar file.jar}
+
+Commands:
+close - to exit the application
+put - to add media file to catalog
+delete - to delete media file from catalog
+favorite - to add/delete media file to/from catalog
+get - moves media file from catalog to your file system
+help - shows the list of commands
+info - shows the list of files from catalog
+move - to move/rename the media files
+search - to search the media file
+
+Every command has helpList, to call it you need to write into program console: "name of command" help
+
+Package:
+MediaCatalog - consists of essence class(MediaFiles) and the application class
+consolecommands - consists of interface Operation
+commands - consists of command classes(for every command class was written)
+services - consists of interface of datasource and realization of it(SQLRep) and the exception class and how it will work
+utils - consists of utils to work with file system, simple parse commands and class which is giving access to the object of datasource(RepFactory)
+
